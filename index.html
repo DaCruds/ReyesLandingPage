@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOSS UWA BAR & Resto</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>BOSS UWA BAR & RESTO</h1>
+  </header>
+  
+  <nav>
+    <ul>
+      <button><li><a href="index.html">Home</a></li></button>
+      <button><li><a href="product.html">Products</a></li></button>
+      <button><li><a href="about.html">About</a></li></button>
+      <button><li><a href="contact.html">Contact</a></li></button>
+      <button><li><a href="owners.html">Owners</a></li></button>
+    </ul>
+  </nav>
+  <section>
+    <h2>Come on in, At BOSS UWA BAR & RESTO</h2>
+    <p>Bring us the wild version of yourself </p>
+    <img src="logo.jpg" alt="Clothing Image">
+  </section>
+
+  <div class="header" id="myHeader">
+    <h1>Image Grid</h1>
+    <p>Many Drinks to Choose for.</p>
+    <button class="btn" onclick="one()">1</button>
+    <button class="btn active" onclick="two()">2</button>
+    <button class="btn" onclick="four()">4</button>
+  </div>
+
+  <div class="row"> 
+    <div class="column">
+      <img src="drink1.jpg" alt ="drinks" style="width:100%">
+      <img src="drink2.jpg" alt ="drinks" style="width:100%">
+      <img src="drink3.jpg" alt ="drinks" style="width:100%">
+      <img src="drink4.png" alt ="drinks" style="width:100%">
+      <img src="drink5.jpg" alt ="drinks" style="width:100%">
+      <img src="drink6.jpg" alt ="drinks" style="width:100%">
+      <img src="drink7.jpg" alt ="drinks" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="drink8.jpg" alt ="drinks" style="width:100%">
+      <img src="drink9.jpg" alt ="drinks" style="width:100%">
+      <img src="drink10.jpg" alt ="drinks" style="width:100%">
+      <img src="drink11.jpg" alt ="drinks" style="width:100%">
+      <img src="drink12.jpg" alt ="drinks" style="width:100%">
+      <img src="drink1.jpg" alt ="drinks" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="drink2.jpg" alt ="drinks" style="width:100%">
+      <img src="drink3.jpg" alt ="drinks" style="width:100%">
+      <img src="drink4.png" alt ="drinks" style="width:100%">
+      <img src="drink5.jpg" alt ="drinks" style="width:100%">
+      <img src="drink6.jpg" alt ="drinks" style="width:100%">
+      <img src="drink7.jpg" alt ="drinks" style="width:100%">
+      <img src="drink8.jpg" alt ="drinks" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="drink9.jpg" alt ="drinks" style="width:100%">
+      <img src="drink10.jpg" alt ="drinks" style="width:100%">
+      <img src="drink11.jpg" alt ="drinks" style="width:100%">
+      <img src="drink12.jpg" alt ="drinks" style="width:100%">
+      <img src="drink1.jpg" alt ="drinks" style="width:100%">
+      <img src="drink2.jpg" alt ="drinks" style="width:100%">
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Sign Up for Reservation</h1>
+    <form id="signup-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</div>
+
+  <footer>
+    &copy; 2023 BOSS UWA BAR AND RESTO. All rights reserved.
+  </footer>
+  <script>
+    //Java ng Reservation sign up kineme//
+    document.addEventListener("DOMContentLoaded", function () {
+      const signUpForm = document.getElementById("signup-form");
+  
+      signUpForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const date = document.getElementById("date").value;          
+          alert(`Thank you, ${name}! You have successfully signed up for a reservation on ${date}.`);
+      });
+  });
+  
+//Java ng Gallery Kineme//
+var elements = document.getElementsByClassName("column");
+
+
+var i;
+
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%"; 
+    elements[i].style.flex = "100%";
+  }
+}
+
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  
+    elements[i].style.flex = "50%";
+  }
+}
+
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  
+    elements[i].style.flex = "25%";
+  }
+}
+
+
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+</body>
+</html>
+

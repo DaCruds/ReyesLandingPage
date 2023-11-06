@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto BAR Owner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BOSS UWA BAR & RESTO</h1>
+      </header>
+      
+      <nav>
+        <ul>
+            <button><li><a href="index.html">Home</a></li></button>
+            <button><li><a href="product.html">Products</a></li></button>
+            <button><li><a href="about.html">About</a></li></button>
+            <button><li><a href="contact.html">Contact</a></li></button>
+            <button><li><a href="owners.html">Owners</a></li></button>
+        </ul>
+      </nav>
+
+    <section>
+        <h2>Owner of the Company</h2>
+            <img src="uwa.jpg" alt="Uwa">
+            <h3>Jhon Jhosua E. Reyes</h3>
+            <p>
+                Meet Jhosua Reyes, a dynamic and ambitious 20-year-old college student, who is making waves in the business world as the CEO of BOSS UWA Bar & Resto. Hailing from a small town, Jhosua's journey began with a burning passion for technology and innovation. Pursuing his dreams, he enrolled in the prestigious Bachelor of Science in Information Technology (BSIT) program.
+            </p>
+            <p>
+                Throughout his academic journey, Jhosua proved to be a standout student, known for his exceptional problem-solving skills and a keen eye for detail. He quickly became a role model for his peers, showcasing a relentless work ethic and determination to excel in both academics and extracurricular activities.
+            </p>
+            <p>
+                But Jhosua's passion extended beyond the realm of IT. During his second year in college, he discovered a hidden passion for entrepreneurship and hospitality. Inspired by the vibrant social scene in his college town and recognizing an opportunity in the market, he decided to venture into the world of business.
+            </p>
+            <p>
+                With unwavering determination, Jhosua established BOSS UWA Bar & Resto, which quickly became a hotspot for students and locals alike. He envisioned a place that would not only cater to people's gastronomic desires but also serve as a hub for fostering a sense of community and connection.
+            </p>
+            <p>
+                As the CEO, Jhosua took on numerous responsibilities, balancing his academic commitments with managing the day-to-day operations of the establishment. He honed his leadership skills, empowering his team to deliver exceptional service and maintain the bar and restaurant's high standards.
+            </p>
+            <p>
+                Despite the challenges that come with being a young entrepreneur, Jhosua's ability to adapt, innovate, and learn from every experience has been the driving force behind BOSS UWA's success. With his forward-thinking mindset and a passion for incorporating technology into every aspect of the business, Jhosua has transformed BOSS UWA into a modern, tech-savvy establishment that sets new industry standards.
+            </p>
+            <p>
+                Beyond business and academics, Jhosua remains actively involved in community projects, supporting local charities, and inspiring fellow young entrepreneurs to chase their dreams. His dedication to making a positive impact on the lives of others has earned him the admiration of both his peers and the wider community.
+            </p>
+            <p>
+                As he continues to grow and evolve, Jhosua Reyes serves as a shining example of what can be achieved through passion, perseverance, and a commitment to turning dreams into reality. With a bright future ahead of him, Jhosua's journey is one that inspires and motivates those around him to reach for the stars and create their path to success.
+            </p>
+    </section>
+    
+
+    
+</main>
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023 BOSS UWA BAR & RESTO. All rights reserved.</p>
+    </div>
+</footer>
+<script>
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        window.location.href = href;
+      });
+    });
+  </script>
+</body>
+
+</html>
